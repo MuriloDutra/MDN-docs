@@ -1,0 +1,12 @@
+-   How does DNS work?
+        If you want to access a web page in your browser, how do you do? I imagine you go to the search bar and type something like this "google.com".
+    The text you typed is kinda an address, but what if I tell you that's NOT the real address for that website? The real address for "google.com" is "172.217.164.110",
+    give it a try, type that number into your browser, the Google page should appear to you.
+        That number you just saw is called "IP Address", it's an unique number that represents the location of that webpage. We can all agree that's not an easy thing to rememeber,
+    a bunch of numbers. That's why DNS exists. DNS is the initials for "Domain Name System", it kinda works like an address book. In this book you have two things,
+    the name of the webpage, like "google.com" and its real address "172.217.164.110". In real life DNS is not a book, but a bunch of servers with those two informations,
+    name and address. So for example when you type "facebook.com" at your browser, the DNS server will match up that name with its IP address, in this case, it's "157.240.22.35".
+
+    If you wanna discover more IP Addresses of other websites, use this site for it: https://www.nslookup.io/
+
+    SOURCE: https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works#dns_explained

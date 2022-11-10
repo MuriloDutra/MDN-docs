@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Multimedia and Embedding HTML</title>
+    <style>
+      iframe {
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/wWa7ZvqdnZk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2624.873917281549!2d2.3354553158631077!3d48.860614608503845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1668036275995!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <iframe
+        src="https://developer.mozilla.org/en-US/docs/Glossary"
+        width="100%"
+        height="500"
+        allowfullscreen
+        sandbox
+      >
+        <p>
+          <a href="/en-US/docs/Glossary">
+            Fallback link for browsers that don't support iframes
+          </a>
+        </p>
+      </iframe>
+
+      <object
+        data="assets/Caverna-do-Diabo.pdf"
+        type="application/pdf"
+        width="100%"
+        height="1200"
+      >
+        <p>
+          You don't have a PDF plugin, but you can
+          <a href="assets/Caverna-do-Diabo.pdf">download the PDF file. </a>
+        </p>
+      </object>
+    </main>
+  </body>
+</html>

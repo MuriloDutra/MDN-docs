@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Responsive image</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Different sizes</h2>
+        <img
+          srcset="elva-fairy-480w.jpg 480w, elva-fairy-800w.jpg 800w"
+          sizes="(max-width: 600px) 480px,
+         800px"
+          src="elva-fairy-800w.jpg"
+          alt="Elva dressed as a fairy"
+        />
+      </section>
+      <section>
+        <h2>Same size, different resolutions</h2>
+        <img
+          srcset="
+            elva-fairy-320w.jpg,
+            elva-fairy-480w.jpg 1.5x,
+            elva-fairy-640w.jpg 2x
+          "
+          src="elva-fairy-640w.jpg"
+          alt="Elva dressed as a fairy"
+        />
+      </section>
+      <section>
+        <h2>Using picture</h2>
+        <picture>
+          <source
+            media="(max-width: 799px)"
+            srcset="elva-480w-close-portrait.jpg"
+          />
+          <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+          <img
+            src="elva-800w.jpg"
+            alt="Chris standing up holding his daughter Elva"
+          />
+        </picture>
+      </section>
+    </main>
+  </body>
+</html>

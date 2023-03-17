@@ -1,0 +1,91 @@
+@import 'rotate-cube.css';
+
+body {
+    background-color: blue;
+}
+
+@media (min-width: 30em) {
+    body {
+        background-color: black;
+    }
+}
+
+p {
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+/*Selector examples*/
+h1, h2 {
+    color: blue;
+}
+
+
+a:link{
+    color: purple;
+    font-size: 40px;
+}
+
+.box p {
+    color: green;
+}
+
+.box p:first-child{
+    color: yellow;
+    font-size: 20px;
+}
+
+#third-paragraph{
+    font-style: italic;
+}
+
+*{
+    border-bottom: solid white 1px;
+}
+
+.oblique-text{
+    font-style: oblique;
+}
+
+.special {
+  color: red;
+}
+
+span {
+  color: blue;
+}
+
+.outer {
+  margin: 20px 0px;
+  border: 5px solid white;
+}
+
+.outer .box {
+  padding: 10px;
+  width: calc(95% - 50px);
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.cube {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rebeccapurple;
+  
+}
+
+/* SHORTHANDS */
+/*This one line:*/
+#div-with-background-image{
+    background: red url(images/conan.jpg) 10px 10px repeat-x;
+    height: 500px;
+}
+/*-- is equivalent to these five lines:
+    background-color: red;
+    background-image: url(bg-graphic.png);
+    background-position: 10px 10px;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+*/

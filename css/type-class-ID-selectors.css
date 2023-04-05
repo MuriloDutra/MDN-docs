@@ -1,0 +1,30 @@
+section article:first-child {
+    background-color: red;
+}
+
+article *:first-child {
+    font-weight: bold;
+}
+
+p.special-paragraph{
+    color: blue;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.notebox {
+    border: 4px solid #666;
+    padding: .5em;
+    margin: 10px 0px;
+}
+
+.notebox.warning {
+    border-color: orange;
+    font-weight: bold;
+}
+
+.notebox.danger {
+    border-color: red;
+    font-weight: bold;
+}
+    
